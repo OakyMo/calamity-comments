@@ -70,11 +70,11 @@ class CalamityComments(MycroftSkill):
         self.speak_dialog('welcome')
         
     @intent_file_handler('color.intent')
-    def handle_thanks_intent(self, message):
+    def handle_color_intent(self, message):
         self.speak_dialog('colors')
         
     @intent_file_handler('coinflip.intent')
-    def handle_thanks_intent(self, message):
+    def handle_coinflip_intent(self, message):
         self.speak_dialog('flip')
   
     @intent_file_handler('random.intent')
