@@ -84,6 +84,10 @@ class CalamityComments(MycroftSkill):
     @intent_file_handler('failure.intent')
     def handle_failure_intent(self, message):
         self.speak_dialog('sympathy')
+        
+    @intent_file_handler('story.intent')
+    def handle_story_intent(self, message):
+        self.speak_dialog('title')
   
     @intent_file_handler('random.intent')
     def handle_random_intent(self, message):
