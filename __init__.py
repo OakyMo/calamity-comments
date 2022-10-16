@@ -77,14 +77,6 @@ class CalamityComments(MycroftSkill):
     def handle_coinflip_intent(self, message):
         self.speak_dialog('flip')
         
-    @intent_file_handler('victory.intent')
-    def handle_victory_intent(self, message):
-        self.speak_dialog('congrats')
-        
-    @intent_file_handler('failure.intent')
-    def handle_failure_intent(self, message):
-        self.speak_dialog('sympathy')
-        
     @intent_file_handler('story.intent')
     def handle_story_intent(self, message):
         self.speak_dialog('title')
