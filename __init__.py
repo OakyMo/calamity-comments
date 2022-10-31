@@ -84,6 +84,10 @@ class CalamityComments(MycroftSkill):
     @intent_file_handler('hush.intent')
     def handle_hush_intent(self, message):
         self.speak_dialog('angry')
+        
+    @intent_file_handler('picknumber.intent')
+    def handle_picknumber_intent(self, message):
+        self.speak_dialog('numberpick')     
   
     @intent_file_handler('random.intent')
     def handle_random_intent(self, message):
